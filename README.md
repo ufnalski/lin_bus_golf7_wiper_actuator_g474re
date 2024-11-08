@@ -1,5 +1,5 @@
 # LIN bus demo using VW Golf VII / Audi A3 8V wiper actuator (STM32G474RE)
-My strong inclination towards electric drives made me knock together a sequel to the [Toyota RAV4 climate control panel](https://github.com/ufnalski/lin_bus_rav4_climate_control_g474re). We are going to communicate over the LIN bus with a wiper actuator. There is almost endless selection of such actuators on the market. However, my goal here is not to spend time on hacking one. The exercise is supposed to be a datasheet-based one. Searching for _wiper actuator/motor protocol_ gave me Wiper Direct Actuator (WDA) from Bosch Motorsport. A quite pricey item. Let's experiment with something cheaper - a similarly looking actuator being used in VW Golf VII, Audi A3 8V, and probably many other popular models. The used part can be easily bought under $10.
+My strong inclination towards electric drives made me knock together a sequel to the [Toyota RAV4 climate control panel](https://github.com/ufnalski/lin_bus_rav4_climate_control_g474re). We are going to communicate over the LIN bus with a wiper actuator. There is almost endless selection of such actuators on the market. However, my goal here is not to spend time on hacking one. The exercise is supposed to be a datasheet-based one. Searching for _wiper actuator/motor protocol_ gave me Wiper Direct Actuator (WDA) from Bosch Motorsport. A quite pricey item. Let's experiment with something cheaper - a similarly looking actuator being used in VW Golf VII, Audi A3 8V, and probably many other popular models. The used part can be easily bought for under $10.
 
 ![LIN bus wiper actuator in action](/Assets/Images/golf7_wda_in_action.jpg)
 
@@ -10,7 +10,7 @@ Don't worry :slightly_smiling_face: Just hit Alt-K to generate /Drivers/CMCIS/ a
 
 # Libraries
 * [stm32-ssd1306](https://github.com/afiskon/stm32-ssd1306) (MIT license)
-* [QR Code[^1] generator library](https://www.nayuki.io/page/qr-code-generator-library) (MIT license)
+* [QR Code generator library](https://www.nayuki.io/page/qr-code-generator-library)[^1] (MIT license)
 
 [^1]: The QR code will take you to the wiper direct actuator (WDA) purchasing options.
 
