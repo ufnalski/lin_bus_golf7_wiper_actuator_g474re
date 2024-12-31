@@ -21,6 +21,7 @@
 #include "dma.h"
 #include "i2c.h"
 #include "usart.h"
+#include "spi.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -168,6 +169,7 @@ int main(void)
   MX_LPUART1_UART_Init();
   MX_USART3_UART_Init();
   MX_I2C1_Init();
+  MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
 
 	ssd1306_Init();

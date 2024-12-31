@@ -40,8 +40,26 @@ Don't worry :slightly_smiling_face: Just hit Alt-K to generate /Drivers/CMCIS/ a
 ![LIN bus decoder](/Assets/Images/dsview_linbus_golf7_wda.JPG)
 ![LIN bus interface/sniffer](/Assets/Images/plin_golf7_wda.JPG)
 
-# For ESP32 (Arduino IDE) afficionados
+# For ESP32 (Arduino IDE) aficionados
 * [ESP32-SoftwareLIN](https://github.com/CW-B-W/ESP32-SoftwareLIN) (a nice read about the break field)
+
+# What's inside?
+* brushed DC motor
+* H-bridge converter (four 90N04 N-Channel MOSFETs)
+* magnetic field sensor (KMZ43T from NXP)
+* uC (D1923BA from Bosch)
+* LIN transceiver (TJA1021 from NXP)
+
+![Bosch WDA PCB top](/Assets/Images/golf7_pcb_top.jpg)
+
+![Bosch WDA PCB bottom](/Assets/Images/golf7_pcb_bottom.jpg)
+
+![Bosch WDA uC](/Assets/Images/golf7_bosch_uc.jpg)
+
+![Bosch WDA magnet](/Assets/Images/golf7_position_sensor_magnet.jpg)
+
+![Bosch WDA cover 2](/Assets/Images/golf7_cover_with_socket_2.jpg)
+
 
 # Call for action
 Create your own [home laboratory/workshop/garage](http://ufnalski.edu.pl/control_engineering_for_hobbyists/2024_dzien_popularyzacji_matematyki/Dzien_Popularyzacji_Matematyki_2024.pdf)! Get inspired by [ControllersTech](https://www.youtube.com/@ControllersTech), [DroneBot Workshop](https://www.youtube.com/@Dronebotworkshop), [Andreas Spiess](https://www.youtube.com/@AndreasSpiess), [GreatScott!](https://www.youtube.com/@greatscottlab), [ElectroBOOM](https://www.youtube.com/@ElectroBOOM), [Phil's Lab](https://www.youtube.com/@PhilsLab), [atomic14](https://www.youtube.com/@atomic14), [That Project](https://www.youtube.com/@ThatProject), [Paul McWhorter](https://www.youtube.com/@paulmcwhorter), [Max Imagination](https://www.youtube.com/@MaxImagination), [Nikodem Bartnik](https://www.youtube.com/@nikodembartnik), and many other professional hobbyists sharing their awesome projects and tutorials! Shout-out/kudos to all of them!

@@ -60,6 +60,10 @@ void Error_Handler(void);
 #define B1_Pin GPIO_PIN_13
 #define B1_GPIO_Port GPIOC
 #define B1_EXTI_IRQn EXTI15_10_IRQn
+#define OLED_DC_Pin GPIO_PIN_2
+#define OLED_DC_GPIO_Port GPIOC
+#define OLED_Res_Pin GPIO_PIN_3
+#define OLED_Res_GPIO_Port GPIOC
 #define LOGIC_ANALYZER_0_Pin GPIO_PIN_0
 #define LOGIC_ANALYZER_0_GPIO_Port GPIOA
 #define LOGIC_ANALYZER_1_Pin GPIO_PIN_1
@@ -74,6 +78,8 @@ void Error_Handler(void);
 #define T_SWDIO_GPIO_Port GPIOA
 #define T_SWCLK_Pin GPIO_PIN_14
 #define T_SWCLK_GPIO_Port GPIOA
+#define OLED_CS_Pin GPIO_PIN_2
+#define OLED_CS_GPIO_Port GPIOD
 #define T_SWO_Pin GPIO_PIN_3
 #define T_SWO_GPIO_Port GPIOB
 
