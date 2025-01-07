@@ -69,6 +69,8 @@
 
 #define NUM_OF_MODES 9
 
+//#define USE_OLED
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -172,6 +174,7 @@ int main(void)
   MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
 
+#ifdef USE_OLED
 	ssd1306_Init();
 
 	showPartDatasheet();
@@ -185,6 +188,7 @@ int main(void)
 	ssd1306_SetCursor(13, 22);
 	ssd1306_WriteString("VW Golf VII wiper", Font_6x8, White);
 	ssd1306_UpdateScreen();
+#endif
 
 	LinSendSoftTimer = HAL_GetTick();
 	SingleStrokeSoftTimer = HAL_GetTick();
@@ -213,9 +217,11 @@ int main(void)
 					rxData[5], rxData[6], rxData[7], rxData[8]);
 			HAL_UART_Transmit(&hlpuart1, lcd_line, uart_message_length, 10);
 			HAL_UART_Transmit(&hlpuart1, (uint8_t*) "\r\n", sizeof("\r\n"), 10);
+#ifdef USE_OLED
 			ssd1306_SetCursor(2, 55);
 			ssd1306_WriteString((char*) lcd_line, Font_6x8, White);
 			ssd1306_UpdateScreen();
+#endif
 		}
 
 		if (HAL_GetTick() - LinSendSoftTimer > LIN_SEND_PERIOD)
@@ -304,6 +310,7 @@ int main(void)
 			HAL_LIN_SendBreak(&huart3);
 			HAL_UART_Transmit(&huart3, txData, 11, 100);
 
+#ifdef USE_OLED
 			ssd1306_SetCursor(2, 32);
 			sprintf((char*) lcd_line, "actuator mode %s ",
 					wiper_mode_name[wiper_mode]);
@@ -316,6 +323,7 @@ int main(void)
 			ssd1306_WriteString((char*) lcd_line, Font_6x8, White);
 
 			ssd1306_UpdateScreen();
+#endif
 
 			golf7counter++;
 
