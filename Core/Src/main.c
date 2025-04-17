@@ -69,7 +69,7 @@
 
 #define NUM_OF_MODES 9
 
-//#define USE_OLED
+#define USE_OLED
 
 /* USER CODE END PD */
 
@@ -331,8 +331,6 @@ int main(void)
 			// ask for diagnostics
 			txData[0] = 0x55;  // sync field
 			txData[1] = Pid_Calc(0x32);
-
-			txData[2] = Checksum_Calc(txData[1], txData + 2, 0); //lin 2.0/2.1 includes PID
 
 			memset(rxData, 0x00, RX_BUFFER_SIZE);
 			HAL_UARTEx_ReceiveToIdle_DMA(&huart3, rxData, RX_BUFFER_SIZE);

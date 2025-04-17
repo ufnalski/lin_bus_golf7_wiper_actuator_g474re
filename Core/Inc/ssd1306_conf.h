@@ -20,8 +20,8 @@
 #define STM32G4
 
 // Choose a bus
-//#define SSD1306_USE_I2C
-#define SSD1306_USE_SPI
+#define SSD1306_USE_I2C
+//#define SSD1306_USE_SPI
 
 // I2C Configuration
 #define SSD1306_I2C_PORT        hi2c1
@@ -37,8 +37,8 @@
 #define SSD1306_Reset_Pin       OLED_Res_Pin
 
 // Mirror the screen if needed
-#define SSD1306_MIRROR_VERT
-#define SSD1306_MIRROR_HORIZ
+//#define SSD1306_MIRROR_VERT
+//#define SSD1306_MIRROR_HORIZ
 
 // Set inverse color if needed
 // # define SSD1306_INVERSE_COLOR
